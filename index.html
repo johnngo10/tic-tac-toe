@@ -3,42 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Tic Tac Toe</title>
   </head>
   <body>
-    <header>
+    <header id="header">
       <h1>Tic Tac Toe</h1>
     </header>
-    <main id="board">
-      <div class="squares">
-        <p>X</p>
-      </div>
-      <div class="squares">
-        <p>X</p>
-      </div>
-      <div class="squares">
-        <p>O</p>
-      </div>
-      <div class="squares">
-        <p>O</p>
-      </div>
-      <div class="squares">
-        <p>X</p>
-      </div>
-      <div class="squares">
-        <p>X</p>
-      </div>
-      <div class="squares">
-        <p>O</p>
-      </div>
-      <div class="squares">
-        <p>O</p>
-      </div>
-      <div class="squares">
-        <p>X</p>
+    <main>
+      <div id="result-message">X's Turn</div>
+      <div id="board">
+        <div class="cells" data-cell="0"></div>
+        <div class="cells" data-cell="1"></div>
+        <div class="cells" data-cell="2"></div>
+        <div class="cells" data-cell="3"></div>
+        <div class="cells" data-cell="4"></div>
+        <div class="cells" data-cell="5"></div>
+        <div class="cells" data-cell="6"></div>
+        <div class="cells" data-cell="7"></div>
+        <div class="cells" data-cell="8"></div>
       </div>
     </main>
+    <button id="reset">Play Again</button>
     <script src="app.js"></script>
   </body>
 </html>
