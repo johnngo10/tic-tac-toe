@@ -18,17 +18,6 @@ const Gameboard = (() => {
   return { placeField, getField, resetBoard, gameBoard };
 })();
 
-// Player Object
-const Player = mark => {
-  this.mark;
-
-  const getMark = () => {
-    return mark;
-  };
-
-  return { getMark };
-};
-
 // Controls entire game
 const gameController = (() => {
   const board = Gameboard.gameBoard;
